@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-logo">
+                Hotel
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#camere">Camere</a></li>
+                    <li><a href="#rezervare">Rezervare</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <h2>Cine suntem noi</h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                consectetur, from a Lorem Ipsum passage, and going through Vestibulum a egestas magna. Aenean tellus
+                elit,
+                aliquet at lacinia at, accumsan eget neque. Maecenas rutrum risus quis sem scelerisque sagittis.
+                Quisque sit amet turpis lorem.
+            </p>
+            <div class="main-img">
+                <img src="Imagini/hotel.jpg" alt="">
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at congue urna, pellentesque faucibus
+                justo.
+                Integer a lorem a mauris suscipit congue luctus ut quam. Mauris pellentesque pellentesque mattis.
+                In sed mi dignissim, faucibus elit at, rutrum odio. Mauris et velit magna. Maecenas iaculis eget
+                sapien eu gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum a
+                egestas magna. Aenean tellus elit, aliquet at lacinia at, accumsan eget neque. Maecenas rutrum risus
+                quis sem scelerisque sagittis. Quisque sit amet turpis lorem, Big Thanks!
+            </p>
+
+            <h2 id="camere">Camere</h2>
+            <p>Simtete ca acasa, acesta este sloganul nostru. Oferim cele mai bune paturi pentru a te putea relaxa asa
+                cum iti doresti.</p>
+
+            <!-- Camere -->
+            <main class="cards">
+                <article class="card">
+                    <img src="Imagini/hotel-simplu.jpg" alt="" class="card-img">
+                    <div class="text">
+                        <h3>Pret: 100 lei</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, illo, expedita  aliquam nulla laborum veritat.</p> -->
+                        <button>Rezerva</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="Imagini/hotel-dublu.jpg" alt="" class="card-img">
+                    <div class="text">
+                        <h3>Pret: 180 lei</h3>
+                        <!-- <p>Voluptates ullam repellat nobis quisquamti aliquum veritatis sequi, impedit sunt nam, poss
+                  imus repellat nobis quisquaborum.</p> -->
+                        <button>Rezerva</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Imagini/hotel-vip.jpg" alt="" class="card-img">
+                    <div class="text">
+                        <h3>Pret: 300 lei</h3>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,  aliquam nulla laborum veritatillo, expedita. Voluptatem, facilis. </p> -->
+                        <button>Rezerva</button>
+                    </div>
+                </article>
+            </main>
+
+            <h2 id="rezervare">Rezerva o camera</h2>
+
+            <form>
+
+                <div class="container2">
+                    <div class="data">
+                        <label>Din</label> <br>
+                        <input type="date">
+                    </div>
+                    <div class="data">
+                        <label>Pana in</label> <br>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="container3">
+                    <div class="numar">
+                        <label>Adulti</label> <br>
+                        <input type="number" value="1" max="50">
+                    </div>
+                    <div class="numar">
+                        <label>Copii</label> <br>
+                        <input type="number" value="0" max="32">
+                    </div>
+                </div>
+                <button class="btn-rezerva">Rezerva</button>
+            </form>
+
+            <h2 class="hoteluri-locatie">Hotelurile Noastre</h2>
+            <p>Ve-ti putea gasi hotelurile noastre peste tot in lume: </p>
+
+            <div class="container4">
+                <div class="item1">
+                    <img src="Imagini/paris.jpg" alt="" class="hotel-locatie paris">
+                    <div class="bottom-left">Paris - Franta</div>
+                </div>
+                <div class="item2">
+                    <img src="Imagini/sighisoara.jpg" alt="" class="hotel-locatie">
+                    <div class="bottom-left">Sighisoara - Romania</div>
+                </div>
+                <div class="item3">
+                    <img src="Imagini/madrid.jpg" alt="" class="hotel-locatie">
+                    <div class="bottom-left">Madrid - Spania</div>
+                </div>
+                <div class="item4">
+                    <img src="Imagini/venezia.jpg" alt="" class="hotel-locatie">
+                    <div class="bottom-left">Venetia - Italia</div>
+                </div>
+                <div class="item5">
+                    <img src="Imagini/san-francisco.jpg" alt="" class="hotel-locatie">
+                    <div class="bottom-left">San Francisco - America</div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <h2 id="contact">Contacteazane</h2>
+            <form class="contact">
+                <div class="email">
+                    <img src="Imagini/mesaj.png" alt="" class="mesaj-img">
+                    <p class="email-text">Email: hotel@mail.com</p>
+                </div>
+                <input type="text" placeholder="Nume" class="contact-form"> <br>
+                <input type="text" placeholder="Email" class="contact-form"> <br>
+                <input type="text" placeholder="Mesaj" class="contact-form"> <br>
+                <button>Trimite</button>
+            </form>
+        </section>
+        
+        <footer>
+            <p class="text-footer">Gasestene si pe</p>
+            <img src="Imagini/facebook.png" alt="" class="footer-logo">
+            <img src="Imagini/instagram.png" alt="" class="footer-logo">
+            <img src="Imagini/twitter.png" alt="" class="footer-logo">
+            <img src="Imagini/whatsapp.png" alt="" class="footer-logo">
+            <img src="Imagini/linkedin.png" alt="" class="footer-logo">
+            <p class="text-footer">Hotel &copy;</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
